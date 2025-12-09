@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #062458 , #000000 );
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 60px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+}
+
+.up h2{
+    font-weight: 400;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 80%;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s ease;
+}
+
+.hero:hover{
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.hero img{
+    width: 250px;
+    border-radius: 50px;
+    margin: 50px;
+}
+
+.text h1{
+    font-size: 55px;
+}
+
+.about{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.write{
+    font-size: 18px;
+}
+
+.edu{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.exp{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-line {
+    width: 90%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto 5px auto;
+}
+
+footer p{
+    padding: 5px 0;
+    padding-bottom: 15px;
+}
+
+.social-icons a {
+    font-size: 22px;
+    color: white;
+    margin: 10px 10px;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: #3f46c3;
+    transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+    .up {
+        padding: 0 30px;
+    }
+    
+    .hero {
+        width: 90%; 
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .text {
+        padding: 0 30px;
+    }
+
+    .hero img {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .up {
+        flex-direction: column; 
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        gap: 35px;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+    
+    .hero {
+        margin: 20px auto;
+        width: 95%;
+        border-radius: 10px; /* Kiçik radius */
+    }
+
+    .text h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+    
+    .text {
+        padding: 0 15px;
+    }
+    
+    .write, .about, .edu, .exp {
+        font-size: 16px;
+    }
+    
+    .hero img {
+        display: none;
+    }
+
+    .footer-line {
+        width: 95%;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
+    .social-icons a {
+        font-size: 20px;
+        margin: 5px 8px;
+    }
+}
+

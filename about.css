@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #062458 , #000000 );
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 60px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+}
+
+.up h2{
+    font-weight: 400;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+}
+
+.about-content {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-content h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); 
+    padding-bottom: 10px;
+}
+
+.section-card {
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.section-card h2, .section-card h3 {
+    color: #ffffff; 
+    margin-bottom: 15px;
+}
+
+.section-card ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.section-card ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.section-card ul li::before {
+    content: "•"; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.section-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.skill-tag:hover {
+    background: #4CAF50; 
+    transform: translateY(-2px);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-line {
+    width: 90%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto 5px auto;
+}
+
+footer p{
+    padding: 5px 0;
+    padding-bottom: 15px;
+}
+
+.social-icons a {
+    font-size: 22px;
+    color: white;
+    margin: 10px 10px;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: #3f46c3;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .section-cards-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .up {
+        flex-direction: column; 
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        gap: 35px;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+
+    .about-content {
+        width: 90%;
+    }
+}

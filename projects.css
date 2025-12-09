@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #062458 , #000000 );
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 60px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+}
+
+.up h2{
+    font-weight: 400;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+}
+
+.hero{
+    height: 72vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#my{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.project1{
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 25px;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s ease;
+    margin-right: 30px;
+}
+
+.project1:hover{
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    transform: scale(1.07);
+}
+
+.project1 h3, .project2 h3{
+    font-size: 25px;
+}
+
+.project1 p, .project2 p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.project1 img, .project2 img{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center ;
+}
+
+.project2{
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 25px;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s ease;
+    margin-left: 30px;
+}
+
+.project2:hover{
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    transform: scale(1.07);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-line {
+    width: 90%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto 5px auto;
+}
+
+footer p{
+    padding: 5px 0;
+    padding-bottom: 15px;
+}
+
+.social-icons a {
+    font-size: 22px;
+    color: white;
+    margin: 10px 10px;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: #3f46c3;
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 1100px) {
+    .up {
+        padding: 0 30px;
+    }
+    
+    #my {
+        font-size: 35px;
+        margin-top: 15px;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 30px 0;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project1, .project2 {
+        width: 85%;
+        margin: 0; 
+    }
+
+    .project1:hover, .project2:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media (max-width: 600px) {
+    .up {
+        flex-direction: column; 
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    #my {
+        font-size: 30px;
+    }
+    
+    .project1, .project2 {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .project1:hover, .project2:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .project1 h3, .project2 h3 {
+        font-size: 20px;
+    }
+    
+    .project1 p, .project2 p {
+        font-size: 15px;
+    }
+    
+    .footer-line {
+        width: 95%;
+    }
+    
+    .social-icons a {
+        font-size: 18px;
+    }
+}

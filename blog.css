@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #062458 , #000000 );
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 60px;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.up h2{
+    font-weight: 400;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+}
+
+.blog-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    margin-top: 40px;
+}
+
+.blog-wrapper {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.blog-card {
+    width: 350px;
+    padding: 25px;
+    border-radius: 18px;
+    border: 2px solid white;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.blog-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.blog-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.blog-card a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
+    color: #3434d8;
+}
+
+footer {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-line {
+    width: 90%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto 5px auto;
+}
+
+footer p{
+    padding: 5px 0;
+    padding-bottom: 15px;
+}
+
+.social-icons a {
+    font-size: 22px;
+    color: white;
+    margin: 10px 10px;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: #3434d8;
+    transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+    .up {
+        padding: 0 30px;
+    }
+    
+    .blog-section {
+        height: auto; /* Yüksəkliyi avtomatik et */
+        margin-top: 30px;
+        padding-bottom: 30px; /* Footer-dən əvvəl boşluq */
+    }
+
+    .blog-wrapper {
+        width: 95%; /* Kontainerin enini bir az artır */
+        gap: 30px;
+    }
+
+    .blog-card {
+        width: 45%; /* Kartlar iki sütun şəklində qalsın */
+        min-width: 300px;
+    }
+}
+
+/* --- MOBİL TELEFONLAR ÜÇÜN STİLLƏR (Max 600px) --- */
+@media (max-width: 600px) {
+    .up {
+        flex-direction: column; 
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        gap: 35px;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+    
+    .blog-wrapper {
+        flex-direction: column; /* Bütün kartları alt-alta yığ */
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .blog-card {
+        width: 60%; /* Mobil cihazda tam eni tutsun */
+        min-width: unset;
+        padding: 20px;
+    }
+    
+    .blog-card h3 {
+        font-size: 20px;
+    }
+    
+    .blog-card p, .blog-card a {
+        font-size: 16px;
+    }
+
+    .footer-line {
+        width: 95%;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
+    .social-icons a {
+        font-size: 20px;
+        margin: 5px 8px;
+    }
+}
